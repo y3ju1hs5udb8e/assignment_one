@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Codes</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        body {
+            padding: 10px;
+        }
+        button {
+            width: 70px;
+            height: 30px;
+            background-color: whitesmoke;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="java_script.html#topic4"><button>Go Back</button></a>
+    <div class="content">
+        <div>
+            <h3>Dark mode toggle</h3>
+            <pre>
+                <code>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    const body = document.body;
+
+                    themeToggle.addEventListener('click', () => {
+                        document.body.classList.toggle('dark-mode');
+
+                        if (document.body.classList.contains('dark-mode')) {
+                            localStorage.setItem('theme', 'dark');
+                        } else {
+                            localStorage.setItem('theme', 'light');
+                        }
+                    });
+
+                    window.addEventListener('DOMContentLoaded', () => {
+                        if (localStorage.getItem('theme') === 'dark') {
+                            document.body.classList.add('dark-mode');
+                        }
+                    });
+                </code>
+            </pre>
+        </div>
+
+        <br/>
+        <div>
+            <h3>Bulb</h3>
+            <pre>
+                <code>
+                    var state = 0;
+                    function turnOn() {
+                        var image = document.getElementById('bulb');
+                        if (state == 1) {
+                        image.src = "images/Bulb/bulbOFF.png";
+                        state = 0;
+                        } else {
+                        image.src = "images/Bulb/bulbON.png";
+                        state = 1;
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Java Script</title>
+    <link rel="shortcut icon" href="../images/logos/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="nav">
+        <!-- logo -->
+        <h1>JavaScript</h1>
+
+        <!-- nav -->
+        <div class="items">
+            <ul>
+                <li><a href="#topic1">Introduction</a></li>
+                <li><a href="#topic2">Importance</a></li>
+                <li><a href="#topic3">Syntax</a></li>
+                <li><a href="#topic4">Example</a></li>
+                <li><a href="#topic5">Conclusion</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body Content -->
+    <div class="content">
+
+        <div id="topic1">
+            <h3>Introduction</h3><br/>
+            
+            <div>
+                JavaScript (Js) is the scripting language for the web based application invented in 1995  by Brendan Eich. It is a cross-platform, Object Oriented Programming (OOP) language used to make webpages interactive by adding functionality such as <a href="#toggle">theme toggle</a> script, popup menus, and many others. Js isn't just applicable in just front-end but aswell in backend, Node.js, which allows users to add advance functionality like connecting front-end (client side) with database via Application Programming Interface (API). <br/>
+                Js contains a standard libary of objects, such as Array, Map, and Math, and like other programming languages it uses elements such operators, control structures, and statements. Core Js can be extended for a varity of purposes such as: <br>
+                &ndash;<b>Client-side:</b> Js uses Document Object Model (DOM) to manipulate the HTML elements to intreact based on the user. For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. <br/>
+                &ndash;<b>Server-side:</b> Initally Js was developed to work on front-end but with the introduction of Node (Node.js), it was able to run out of browser making it suitable for server side rendering. For example, Server-side extensions allows an application to communicate with a database.
+            </div>
+            <br>
+
+            <p>
+                <b>Fun-Fact:</b><em> In 1997 A.D Js became an European Computer Manufacturers Association (ECMA) standard and began to known as ECMAScript. ECMAScript's versions are denoted by ES and ES6 is the common and most used Js version.</em>
+            </p>
+            <br/>
+
+            <p style="text-align: right;">Source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#what_is_javascript">MDN Docs</a></p>
+        </div>
+
+        <div id="topic2">
+            <h3>Imporance of JS</h3> <br/>
+            <div>If we talk about the font-end part, Js is as well as important as server-side Js. In front-end Js is important becasuse:
+                <ul>
+                    <li><b>Compatibility</b>: It supports all modern browsers which increases in web applications performance and produce equivalent results.</li>
+                    <li><b>Rich Interactive Experiences</b>: It is responsible for creating engaging and interactive webpages using DOM to mainpulate HTML elements to dynamically update content, handle user events, and create animations.</li>
+                    <li><b>Asynchronous Programming</b>: Js supports asynchronous programming </li>
+                    <li><b>Versatile Ecosystem</b>: Frameworks like React, Vue, Angular, etc. are js based front-end framework which provide robust structures for building complex single-page applications (SPAs)</li>
+                </ul>
+            </div>
+
+            <p style="text-align: right;">Source: <a href="https://www.linkedin.com/pulse/importance-javascript-modern-web-development-aritra-pain-pjv4c">Aritra Pain</a></p>
+        </div>
+
+        <div id="topic3">
+            <h3>Basic Syntax</h3> <br/>
+            <div>
+                Js is a scripting language used to add interactivity and dynamic behavior to web pages. Well it can be applied into HTML files directly using script tag or externally making .js file. Well both needs to be in a script tag but there is a difference on that, let's see the differenceses: <br/>
+                
+                <h4>1. Internal Js</h4>
+                <p>
+                    As the name speaks, internal method is directly written inside the .html file using the script tag. The script tag can be placed inside the head of the HTMl like embedded CSS or just before the closing body tag (&lt;/body&gt;) <br/>
+                    <b>In head method: </b><br/>
+                    <pre>
+                        <code>
+                            &lt;head&gt;
+                                &lt;title&gt;Internal JS Example&lt;/title&gt;
+                                &lt;script&gt;
+                                    function greet() {
+                                        alert("Hello from Internal JavaScript!");
+                                    }
+                                &lt;/script&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;
+                            &lt;/body&gt;
+                        </code>
+                    </pre>
+                    <br/>
+                    <b>Before closing body tag: </b><br/>
+                    <pre>
+                        <code>
+                            &lt;body&gt;
+                                &lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;
+
+                                &lt;script&gt;
+                                    function greet() {
+                                        alert("Hello from Internal JavaScript!");
+                                    }
+                                &lt;/script&gt;
+                            &lt;/body&gt;
+                        </code>
+                    </pre>
+                </p>
+
+                <br/>
+
+                <h4>2. External Js</h4>
+                <p>
+                    The external approach required the seperated script file with .js file type. The using the script tag it is linked in HTML. <br/>
+                    <b>index.html</b>
+                    <pre>
+                        <code>
+                            &lt;head&gt;
+                                &lt;title&gt;Internal JS Example&lt;/title&gt;
+                                &lt;script src="script.js"&gt;&lt;/script&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;
+                            &lt;/body&gt;
+                        </code>
+                    </pre>
+                    <br/>
+                    <b>script.js</b>
+                    <pre>
+                        <code>
+                            function greet() {
+                                alert("Hello from Internal JavaScript!");
+                            }
+                        </code>
+                    </pre>
+                </p>
+                <br/>
+
+                Well, when clicking both examples button it eventually will alter user saying, "Hello from Internal JavaScript!". It's because of the script. As you can see above the script kinds looks C-like language. So let's break it down: <br/>
+                <ul>
+                    <li><b>function</b>: It is a kewword used to declare function in js.</li>
+                    <li><b>greet()</b>: the greet is the name of the functon while () is used to add parameters which a function might use</li>
+                    <li><b>{}</b>: The curly braces enclose the body of the function. Everything inside them will run when the function is called.</li>
+                    <li><b>alert()</b>: alert is the built-in Js funtion which display message in browsers alert box. In this case, it will alert saying, "Hello from Internal JavaScript!"</li>
+                </ul>
+
+                <h4>Visual representation:</h4>
+                <div class="display">
+                    <div class="image">
+                        <img src="../images/display.png" alt="Code Output">
+                    </div>
+                </div>
+                The alert box is greeting.
+            </div>
+        </div>
+
+        <div id="topic4">
+            <h3>Example</h3> <br/>
+            <div>
+                Let's look at some of the basic examples of Js to know what it can do to enhance user experience while surfing through the webpages.
+                <h4 id="toggle">Toggle Theme</h4>
+                <div class="toggle">
+                    <p>If you click on the button bellow, your screen will adapt from light mode to dark mode or vise versa.</p>
+                    <center><button id="theme-toggle">Dont' Click Me</button></center>
+                </div>
+
+                <h4>Bulb</h4>
+                <p>Click on image to turn on the bulb or to turn off the bulb</p>
+                <div style="text-align: center;">
+                    <img id="bulb" onclick="turnOn()" src="../images/Bulb/bulbOFF.png" width="200" height="200">
+                </div>
+
+                <p>These are the childs paly sort a thing, with Js we can implement so many things such as Interactive Form Validation, Menu Bar, and can even add anmations.</p>
+                <p>Source code for above Js examples, <a href="code.html">Code</a></p>
+            </div>
+        </div>
+
+        <div id="topic5">
+            <h3>Conclusion</h3> <br/>
+            <p>
+                JavaScript is a crucial programming language that gives websites dynamic behavior and interactivity. From basic alert boxes to sophisticated theme toggles and animations, it enables developers to create captivating user experiences, whether it is stored in a separate.js file (external JavaScript) or embedded directly within HTML using the &lt;script&gt; tag (internal JavaScript). For small scripts or demos, internal JS is quick and practical, but external JS provides better code organization, scalability, and reusability. Writing clear, maintainable, and interactive web applications starts with an understanding of both approaches.
+            </p>
+        </div>
+    </div>
+
+    <div class="next" style="border: none; background: transparent;">
+        <center><a href="../main.html#front-skills"><button>Finished Reading</button></a></center>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

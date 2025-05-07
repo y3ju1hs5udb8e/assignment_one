@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="shortcut icon" href="../images/logos/bs.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="nav">
+        <!-- logo -->
+        <h1>Bootstrap</h1>
+
+        <!-- nav -->
+        <div class="items">
+            <ul>
+                <li><a href="#topic1">Introduction</a></li>
+                <li><a href="#topic2">Imporance</a></li>
+                <li><a href="#topic3">Tutorial</a></li>
+                <li><a href="#topic4">Example</a></li>
+                <li><a href="#topic5">Conclusion</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body Content -->
+    <div class="content">
+
+        <div id="topic1">
+            <h3>Introduction</h3>
+            <p>
+                In there modern era, using plain and traditional .css file gets heavy for larger projects. The term heavy here stands for lines of codes written to decorate a page, making it responsive, and many more Cascading Style Sheets (CSS) related tasks. Traditional CSS get's annoying overtime, that's why frameworks were introduced. A framework consists of reusable software components that provide a foundation for developing applications. Similary in CSS, to reduce the annoying situation there are lots of CSS frameworks such as, Bootstrap, Tailwind CSS, Bulma, and many more. <br/>
+                <b>Bootstrap</b>, it is a free and open-source front-end framewrok for making web applications. It is also considered CSS-toolkit for developing responsive and mobile-first websites by providing a collection of syntax for template designs. The Bootstrap is built on Htper Text Markup Language (HTML), CSS and Java Scripts (Js) which makes it include the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system. Also in computing, the term bootstrap means to boot or to load a program into a computer using a much smaller initial program to load in the desired program, which is usually an OS.
+            </p>
+        </div>
+
+        <div id="topic2">
+            <h3>Why use bootstrap?</h3> <br/>
+            <div>
+                <p>Bootstrap is a flexible and dynamic front frame that provides a free collection of tools for creating websites and web applications. Developers or designers should use bootstrap in their projects because:</p>
+                <ul>
+                    <li>It is a framework which will help developers & designers design websites quickly and easily.</li>
+                    <li>It includes HTML and CSS based templates for forms, buttons, tables, image carousels, etc. It also provides the support for JavaScript plugins</li>
+                    <li>It is adaptable and simple to work with in all range of projects.</li>
+                    <li>It responds with design, maintains wide browser compatibility, provides consistent design through usable components, and is very easy to use and quick to learn.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="topic3">
+            <h3>Tutorial</h3> <br/>
+            <div>
+                <p>Its is quite simple to implement bootstrap in our projects. You can even follow the offical document of <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap</a></p>
+                <b>But let's make a simple one here.</b>
+                Steps:
+                <h4>1. Creating a file (.html file)</h4>
+                <p>If you're using Vs-code, then simply create a .html file and type !, to use the basic sinppit. In step one that much is enough.</p>
+                <h4>2. Linking Bootstrap</h4>
+                <p>
+                    We basically have to link, the css and the js into our project. It's like injecting steroid into out body. The simple thing is, we have to now link it into our HTML file using the CDN links, copy form the offical docs site. (Link: <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links">CDN links</a>). Now <br/>
+                    
+                    <em>in file representation (.html file)</em>
+                    <pre>
+                        <code>
+                            &lt;-- in head section add .css --&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="utf-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                &lt;title&gt;My project&lt;/title&gt;
+                                &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;-- in body (brfore closing) section add .js --&gt;
+                                &lt;h1&gt;Hello, world!&lt;/h1&gt;
+                                &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"&gt;&lt;/script&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                    Add those links, as shown in the code above.
+                </p>
+
+                <h4>3. Start using Bootstrap</h4>
+                <p>
+                    Head to offical <a href="https://getbootstrap.com/">Bootstrap</a> site and navigate to search bar, and search required designe template. Copy it and paste it in you .html file. For example: <br/>
+                    <pre>
+                        <code>
+                            &lt;body&gt;
+                                &lt;-- paste bootstrap code here --&gt;
+                                &lt;ul class="nav nav-tabs"&gt;
+                                    &lt;li class="nav-item"&gt;
+                                    &lt;a class="nav-link active" aria-current="page" href="#"&gt;Active&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                    &lt;a class="nav-link disabled" aria-disabled="true"&gt;Disabled&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/body&gt;
+                        </code>
+                    </pre>
+                    As shown in the above code, copy the bootstrap code (in my case it's of tabbar) and paste the bootstrap inside body tag and enjoy.
+                </p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <div id="topic4">
+            <h3>Examples</h3> <br/>
+            <div>
+                <p>This section includes some examples of the bootstrap implemented in here to see the difference between plain CSS and Bootstrap. As an example I will use the Navbar,</p>
+                <h4>BootStrap navbar</h4>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+                <p>Note: <em>Once you implement Bootstrap into your project you might see some changes in your project desgin, it's because Bootstrap CSS somehow overides plain .css file, not all but some</em></p>
+                <p>Now try squizing the screen ui into phone size by using inspection option of your browser (widndows: ctrl+shift+i, mac: cmd+shift+i) and notice the difference between navbar made up of plain.css file and bootstrap nav bar</p>
+            </div>
+        </div>
+
+        <div id="topic5">
+            <h3>Conclusion</h3> <br/>
+            <p>
+                A common and powerful front-end framework, Bootstrap makes it easier to create responsive and mobile-first websites. Its flexible a grid system, already developed CSS classes, and JavaScript components allows developers to quickly create layouts that look professional without having to start from scratch. Bootstrap greatly cuts down on development time while maintaining design consistency, whether you're creating a small personal project or a large-scale application. Learning Bootstrap guarantees that your website looks fantastic on all devices and speeds up your workflow.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="next" style="border: none; background: transparent;">
+        <a href="../main.html#front-skills"><button>Finished Reading</button></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
